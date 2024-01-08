@@ -1,0 +1,38 @@
+* {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  margin: 5%;
+  width: 90%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+button:hover {
+  background-color: #004d00;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border-style: none;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  display: flex;
+  gap: 30px;
+}
+
+button[disabled] {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+button[disabled]:hover {
+  background-color: gray;
+}

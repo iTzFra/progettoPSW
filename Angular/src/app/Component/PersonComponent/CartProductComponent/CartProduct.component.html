@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="container2">
+    <div class="container3" *ngFor="let cartProduct of cartProducts">
+      <div class="container4">
+        <p>Nome: {{cartProduct.product.productName}}</p>
+        <p>Codice: {{cartProduct.product.code}}</p>
+        <p class="description">Descrizione: {{cartProduct.product.description}}</p>
+        <div class="container5">
+          <p>{{cartProduct.product.price}}€</p>
+          <input type="number" class="quantity" min="1" max="10" (input)="onQuantity(cartProduct.id,quantity.value)"
+                 #quantity value="{{cartProduct.quantity}}" [readOnly]="isQuantityDisabled">
+          <button (click)="onDelete(cartProduct.id)" [disabled]="isDeleteDisabled">Elimina</button>
+        </div>
+      </div>
+    </div>
+    <app-warning *ngIf="isCartEmpty"></app-warning>
+  </div>
+  <div class="container6" *ngIf="!isCartEmpty">
+    <p>Totale: {{cart.total}}€</p>
+    <p>Quantità prodotti: {{cart.quantity}}</p>
+    <button (click)="onOrder()" [disabled]="isOrderDisabled">Ordina</button>
+  </div>
+</div>
+

@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="container2">
+    <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+      <p>Aggiungi prodotto</p>
+      <input type="text" placeholder="Nome" formControlName="productName">
+      <input type="text" placeholder="Prezzo" formControlName="price">
+      <input type="text" placeholder="Codice" formControlName="code">
+      <input type="text" placeholder="Quantità" formControlName="quantity">
+      <textarea placeholder="Descrizione" formControlName="description"></textarea>
+      <button type="submit" [disabled]="isAddDisabled">Aggiungi</button>
+    </form>
+  </div>
+</div>
+

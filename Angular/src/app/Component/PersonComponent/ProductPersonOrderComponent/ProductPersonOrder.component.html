@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="container2" *ngFor="let productPersonOrder of productPersonOrders">
+    <div class="container3">
+      <p>Nome: {{productPersonOrder.product.productName}}</p>
+      <p>Codice: {{productPersonOrder.product.code}}</p>
+      <p class="description">Descrizione: {{productPersonOrder.product.description}}</p>
+      <div class="container4">
+        <p>Prezzo: {{productPersonOrder.price}}</p>
+        <p>Quantità: {{productPersonOrder.quantity}}</p>
+      </div>
+    </div>
+  </div>
+</div>

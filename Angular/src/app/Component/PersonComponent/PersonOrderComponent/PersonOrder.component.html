@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="container2" *ngFor="let personOrder of personOrders">
+    <div class="container3">
+      <p>Data: {{personOrder.orderDate}}</p>
+      <p>Totale: {{personOrder.total}}€</p>
+      <p>Quantità prodotti: {{personOrder.quantity}}</p>
+      <button routerLink="/personPage/personOrderList/{{personOrder.id}}">Visualizza prodotti</button>
+    </div>
+  </div>
+  <app-warning *ngIf="isPersonOrdersEmpty"></app-warning>
+</div>
+

@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="container2">
+    <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+      <p>Login</p>
+      <input type="text" placeholder="Email" formControlName="email">
+      <input type="text" placeholder="Password" formControlName="password">
+      <a routerLink="/register">Non sei registrato?</a>
+      <button type="submit" [disabled]="isLoginDisabled">Login</button>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

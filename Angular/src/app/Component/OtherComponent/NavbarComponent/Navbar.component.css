@@ -1,0 +1,43 @@
+* {
+  font-size: 20px;
+}
+
+.container {
+  color: white;
+  font-weight: bold;
+  display: flex;
+  background-color: #03256C;
+  height: 150px;
+  align-items: center;
+}
+
+.container2 {
+  width: 94%;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+.container4 {
+  display: flex;
+  gap: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container4 a:hover {
+  color: #06BEE1;
+}
+
+span {
+  color: #06BEE1;
+}
+
+.container3 {
+  text-decoration: none;
+  color: inherit;
+}

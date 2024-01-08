@@ -1,0 +1,18 @@
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+import {WarningComponent} from './Warning.component';
+
+describe('WarningComponent', () => {
+  let component: WarningComponent;
+  let fixture: ComponentFixture<WarningComponent>;
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [WarningComponent]
+    });
+    fixture = TestBed.createComponent(WarningComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

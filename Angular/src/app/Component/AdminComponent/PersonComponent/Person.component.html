@@ -1,0 +1,29 @@
+<div class="container">
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+    <input type="text" placeholder="Email" formControlName="email">
+    <button type="submit" [disabled]="isSearchDisabled">Cerca</button>
+  </form>
+  <div class="container2">
+    <div class="container3">
+      <div class="container4" *ngFor="let person of persons">
+        <div class="container5">
+          <p>Nome: {{person.firstName}}</p>
+          <p>Cognome: {{person.lastName}}</p>
+          <p>Telefono: {{person.telephone}}</p>
+          <p>Email: {{person.email}}</p>
+          <button routerLink="/adminPage/personList/{{person.id}}">Ordini</button>
+        </div>
+      </div>
+      <app-warning *ngIf="isPersonEmpty"></app-warning>
+    </div>
+    <div class="container7">
+      <button (click)="onArrowLeft()" [disabled]="isLeftButtonDisabled">
+        <fa-icon [icon]="iconArrowLeft"></fa-icon>
+      </button>
+      <p> {{pageNumber}} </p>
+      <button (click)="onArrowRight()" [disabled]="isRightButtonDisabled">
+        <fa-icon [icon]="iconArrowRight"></fa-icon>
+      </button>
+    </div>
+  </div>
+</div>

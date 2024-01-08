@@ -1,0 +1,23 @@
+* {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  background-color: #03256C;
+  color: white;
+  cursor: default;
+  font-weight: bold;
+  flex-direction: column;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+

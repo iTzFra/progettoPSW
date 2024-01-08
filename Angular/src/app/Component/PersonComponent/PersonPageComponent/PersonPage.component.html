@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="container2">
+    <button routerLink="cartProductList">Carrello</button>
+    <button routerLink="info">Info</button>
+    <button routerLink="personOrderList">Ordini</button>
+    <button (click)="onLogout()" [disabled]="isLogoutDisabled">Logout</button>
+  </div>
+  <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

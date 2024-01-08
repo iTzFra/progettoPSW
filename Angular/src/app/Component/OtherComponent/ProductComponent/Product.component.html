@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+    <input type="text" placeholder="Nome Prodotto" formControlName="productName">
+    <button [disabled]="isSearchDisabled">Cerca</button>
+  </form>
+  <div class="container2">
+    <div class="container3">
+      <div class="container4" *ngFor="let product of products">
+        <div class="container5">
+          <p>Nome: {{product.productName}}</p>
+          <p>Codice: {{product.code}}</p>
+          <p class="description">Descrizione: {{product.description}}</p>
+          <div class="container6">
+            <p>{{product.price}}€</p>
+            <input type="number" max="10" min="1" value="1" #quantity class="quantity">
+            <button (click)="onAdd(product.id,quantity.value)" [disabled]="isAddDisabled">Aggiungi</button>
+          </div>
+        </div>
+      </div>
+      <app-warning *ngIf="isProductsEmpty"></app-warning>
+    </div>
+    <div class="container7">
+      <button (click)="onArrowLeft()" [disabled]="isLeftButtonDisabled">
+        <fa-icon [icon]="iconArrowLeft"></fa-icon>
+      </button>
+      <p> {{pageNumber}} </p>
+      <button (click)="onArrowRight()" [disabled]="isRightButtonDisabled">
+        <fa-icon [icon]="iconArrowRight"></fa-icon>
+      </button>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+
+

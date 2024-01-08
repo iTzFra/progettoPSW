@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="container2">
+    <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+      <p>Info</p>
+      <input type="text" formControlName="firstName">
+      <input type="text" formControlName="lastName">
+      <input type="text" formControlName="telephone">
+      <button type="submit" [disabled]="isUpdateDisabled">Modifica</button>
+    </form>
+  </div>
+</div>
+

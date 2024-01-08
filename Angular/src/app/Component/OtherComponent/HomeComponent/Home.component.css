@@ -1,0 +1,28 @@
+* {
+  font-size: 20px;
+}
+
+.home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/assets/background.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home app-footer .container {
+  background-color: transparent;
+}
+
+.home app-navbar .container {
+  background-color: transparent;
+}
+
+
+
+
+
+
+

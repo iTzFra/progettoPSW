@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<div class="container">
+  <div class="container2">
+    <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+      <p>Register</p>
+      <input type="text" placeholder="Nome" formControlName="firstName">
+      <input type="text" placeholder="Cognome" formControlName="lastName">
+      <input type="text" placeholder="Telefono" formControlName="telephone">
+      <input type="text" placeholder="Email" formControlName="email">
+      <input placeholder="Password" type="password" formControlName="password">
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</div>
+<app-footer></app-footer>

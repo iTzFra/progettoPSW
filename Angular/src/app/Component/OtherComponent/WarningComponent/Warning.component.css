@@ -1,0 +1,13 @@
+* {
+  font-size: 20px;
+}
+
+.container {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+}
+
+

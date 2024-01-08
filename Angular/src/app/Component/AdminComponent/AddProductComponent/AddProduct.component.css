@@ -1,0 +1,60 @@
+* {
+  font-size: 20px;
+}
+
+.container2 {
+  display: flex;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  color: #03256C;
+}
+
+button[disabled] {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.form {
+  display: flex;
+  margin: 10%;
+  width: 80%;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container {
+  display: flex;
+  cursor: default;
+  color: white;
+  justify-content: center;
+}
+
+button[disabled]:hover {
+  background-color: gray;
+}
+
+button:hover {
+  background-color: #004d00;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border-style: none;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

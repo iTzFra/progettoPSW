@@ -1,0 +1,6 @@
+#FileLock
+#Thu Jan 04 14:32:15 CET 2024
+hostName=FrancescoPC.station
+id=18cd4aca4b36ba3958cacd9f905100d3bf32416b766
+method=file
+server=192.168.1.2\:61540

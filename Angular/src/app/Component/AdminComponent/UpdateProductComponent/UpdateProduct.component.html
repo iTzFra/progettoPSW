@@ -1,0 +1,31 @@
+<div class="container">
+  <form class="form" [formGroup]="form" (ngSubmit)="onSubmit(form)">
+    <input type="text" placeholder="Nome Prodotto" formControlName="productName">
+    <button type="submit" [disabled]="isSearchDisabled">Cerca</button>
+  </form>
+  <div class="container2">
+    <div class="container3" *ngFor="let product of products; let i=index">
+      <div class="container4">
+        <form class="form2" [formGroup]="form2Array[i]" (ngSubmit)="onSubmit2(form2Array[i],product.id)">
+          <p>Modifica prodotto</p>
+          <input type="text" formControlName="productName">
+          <input type="text" formControlName="price">
+          <input type="text" formControlName="code">
+          <input type="text" formControlName="quantity">
+          <textarea formControlName="description"></textarea>
+          <button type="submit" [disabled]="isUpdateDisabled">Modifica</button>
+        </form>
+      </div>
+    </div>
+    <app-warning *ngIf="isProductsEmpty"></app-warning>
+  </div>
+  <div class="container5">
+    <button (click)="onArrowLeft()" [disabled]="isLeftButtonDisabled">
+      <fa-icon [icon]="iconArrowLeft"></fa-icon>
+    </button>
+    <p> {{pageNumber}} </p>
+    <button (click)="onArrowRight()" [disabled]="isRightButtonDisabled">
+      <fa-icon [icon]="iconArrowRight"></fa-icon>
+    </button>
+  </div>
+</div>

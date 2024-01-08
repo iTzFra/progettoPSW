@@ -1,0 +1,39 @@
+* {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.container2 {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+  display: flex;
+  cursor: default;
+}
+
+.container3 {
+  display: flex;
+  gap: 30px;
+  margin: 3%;
+  width: 94%;
+  flex-direction: column;
+}
+
+button:hover {
+  background-color: #004d00;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border-style: none;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+

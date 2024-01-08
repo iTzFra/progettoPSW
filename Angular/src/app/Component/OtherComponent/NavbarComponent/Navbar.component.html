@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="container2">
+    <a class="container3" routerLink="">Shop<span>Online</span></a>
+    <div class="container4">
+      <a *ngIf="!isAdminLogged" routerLink="/products">Prodotti</a>
+      <a *ngIf="!isLogged" routerLink="/login">Login</a>
+      <a *ngIf="isUserLogged" routerLink="/personPage">Person</a>
+      <a *ngIf="isAdminLogged" routerLink="/adminPage">Admin</a>
+    </div>
+  </div>
+</div>

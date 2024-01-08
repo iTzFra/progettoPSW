@@ -1,0 +1,15 @@
+2023-05-15 14:50:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "MIGRATION_MODEL" not found; SQL statement:
+SELECT ID, VERSION FROM MIGRATION_MODEL ORDER BY UPDATE_TIME DESC [42102-197]
+2023-05-15 14:50:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOG" not found; SQL statement:
+SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOG [42102-197]
+2023-05-15 14:50:36 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOGLOCK" not found; SQL statement:
+SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOGLOCK [42102-197]
+2023-05-15 14:50:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "DATABASECHANGELOG" not found; SQL statement:
+SELECT COUNT(*) FROM PUBLIC.DATABASECHANGELOG [42102-197]
+2023-07-19 17:21:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Timeout trying to lock table ; SQL statement:
+insert into USER_ENTITY (CREATED_TIMESTAMP, EMAIL, EMAIL_CONSTRAINT, EMAIL_VERIFIED, ENABLED, FEDERATION_LINK, FIRST_NAME, LAST_NAME, NOT_BEFORE, REALM_ID, SERVICE_ACCOUNT_CLIENT_LINK, USERNAME, ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) [50200-197]

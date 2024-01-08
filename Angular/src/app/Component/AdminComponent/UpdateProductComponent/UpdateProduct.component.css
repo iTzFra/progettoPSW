@@ -1,0 +1,92 @@
+* {
+  font-size: 20px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.form {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+}
+
+input {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container5 {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border-style: none;
+  padding: 5px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+button[disabled] {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.container4 {
+  display: flex;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5%;
+  color: #03256C;
+}
+
+button:hover {
+  background-color: #004d00;
+}
+
+button[disabled]:hover {
+  background-color: gray;
+}
+
+.form2 {
+  display: flex;
+  margin: 10%;
+  width: 80%;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container3 {
+  display: flex;
+  cursor: default;
+  color: white;
+  justify-content: center;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
